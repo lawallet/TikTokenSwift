@@ -1,17 +1,9 @@
-//
-//  Model.swift
-//  
-//
-//  Created by Richard Perry on 9/1/24.
-//
-
 import Foundation
 
 struct Model {
-    static func getEncoding(_ model: GptModel) -> Vocab? {
+    static func getEncoding(_ model: GptModel) -> Vocab {
         return model.modelForEncoder
     }
-
 }
 
 public enum GptModel: String {

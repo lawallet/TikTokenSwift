@@ -1,10 +1,3 @@
-//
-//  FileDecoder.swift
-//  
-//
-//  Created by Richard Perry on 9/6/24.
-//
-
 import Foundation
 
 struct FileDecoder {

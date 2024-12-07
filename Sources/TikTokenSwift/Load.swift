@@ -1,15 +1,7 @@
-//
-//  Load.swift
-//  
-//
-//  Created by Richard Perry on 9/1/24.
-//
-
 import Foundation
 import CryptoKit
 
-struct Load {
-    
+struct Load {    
     static func loadTiktokenBpe(vocab: Vocab, decoder: FileDecoder = FileDecoder()) async throws -> BpeRanks {
         let vocabData = try await vocab.loadVocabData()
         var fileBpe = try decoder.decode(vocabData)

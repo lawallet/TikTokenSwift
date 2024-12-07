@@ -1,10 +1,3 @@
-//
-//  TikTokenError.swift
-//  TokenizerTest
-//
-//  Created by Richard Perry on 9/6/24.
-//
-
 import Foundation
 
 public enum TikTokenError: LocalizedError {

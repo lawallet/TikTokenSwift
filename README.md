@@ -18,11 +18,15 @@ Currently it supports the following tokenizers:
 ## Code Example
 
 ```swift
-let tokenizerSwift = try? await TikTokenSwift.shared.getEncoding(.gpt4)
-let tokens = try? tokenizerSwift?.encode(value: " \\u0850")
-let tokenCount = tokens?.count
-
-let reverted =  tokenizerSwift?.decode(value: tokens!)
+do {
+    let tokenizer = try await TikTokenSwift.shared.getEncoding(model: .gpt4o)
+    let tokens = try tokenizer.encode(value: " \\u0850")
+    let tokenCount = tokens.count
+    
+    let reverted = tokenizer.decode(value: tokens)
+} catch {
+    // handle error
+}
 ```
 
 ## Known Issues/Limitations:

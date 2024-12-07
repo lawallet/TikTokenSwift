@@ -1,10 +1,3 @@
-//
-//  UnicodeScalar+Printable.swift
-//
-//
-//  Created by Richard Perry on 9/5/24.
-//
-
 import Foundation
 
 extension Unicode.Scalar {

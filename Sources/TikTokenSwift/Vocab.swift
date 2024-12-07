@@ -1,12 +1,4 @@
-//
-//  Vocab.swift
-//  
-//
-//  Created by Richard Perry on 9/1/24.
-//
-
 import Foundation
-
 
 enum SpecialTokenConstants: String {
     case ENDOFTEXT = "<|endoftext|>"

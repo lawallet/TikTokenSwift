@@ -2,15 +2,6 @@ import XCTest
 @testable import TikTokenSwift
 
 final class TikTokenSwiftTests: XCTestCase {
-    func testExample() throws {
-        // XCTest Documentation
-        // https://developer.apple.com/documentation/xctest
-
-        // Defining Test Cases and Test Methods
-        // https://developer.apple.com/documentation/xctest/defining_test_cases_and_test_methods
-        
-    }
-    
     func testSimple() async throws {
         var enc = try? await TikTokenSwift.shared.getEncoding(model: .gpt2)
         XCTAssertNotNil(enc)
@@ -29,7 +20,6 @@ final class TikTokenSwiftTests: XCTestCase {
     }
     
     func testSimpleRepeated() async throws {
-
         let enc = try? await TikTokenSwift.shared.getEncoding(model: .gpt2)
         XCTAssertNotNil(enc)
         var encodedString = try? enc!.encode(value: "0")
@@ -99,6 +89,5 @@ final class TikTokenSwiftTests: XCTestCase {
         encodedString = try? enc!.encode(value: "00000000000000000")
         XCTAssertNotNil(encodedString)
         XCTAssertEqual(encodedString!, [8269, 10535, 830])
-        
     }
 }

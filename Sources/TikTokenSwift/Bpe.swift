@@ -1,10 +1,3 @@
-//
-//  Bpe.swift
-//  
-//
-//  Created by Richard Perry on 9/2/24.
-//
-
 import Foundation
 
 // Essentially a dictionary with a C style string as the key and its corresponding ranking as the value

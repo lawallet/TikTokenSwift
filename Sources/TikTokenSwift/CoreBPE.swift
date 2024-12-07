@@ -1,10 +1,3 @@
-//
-//  CoreBPE.swift
-//  
-//
-//  Created by Richard Perry on 9/4/24.
-//
-
 import Foundation
 
 class CoreBPE {

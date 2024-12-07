@@ -1,14 +1,6 @@
-//
-//  Encoding.swift
-//  
-//
-//  Created by Richard Perry on 9/1/24.
-//
-
 import Foundation
 
-public class Encoding {
-    
+public class Encoding {    
     private let name: String
     private let regex: NSRegularExpression // Regex
     private let mergedRanks: BpeRanks

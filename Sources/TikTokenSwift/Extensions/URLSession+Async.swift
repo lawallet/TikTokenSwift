@@ -1,15 +1,8 @@
-//
-//  URLSession+Async.swift
-//
-//
-//  Created by Richard Perry on 9/6/24.
-//
-
 import Foundation
 
 extension URLSession {
     func asyncData(from: URL) async throws -> (Data, URLResponse) {
-        if #available(iOS 15.0, *) {
+        if #available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *) {
             try await self.data(from: from)
         } else {
             try await withCheckedThrowingContinuation { continuation in

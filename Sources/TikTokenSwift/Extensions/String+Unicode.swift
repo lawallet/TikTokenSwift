@@ -1,10 +1,3 @@
-//
-//  String+Unicode.swift
-//
-//
-//  Created by Richard Perry on 9/5/24.
-//
-
 import Foundation
 
 extension String {
